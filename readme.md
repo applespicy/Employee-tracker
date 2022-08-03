@@ -23,4 +23,4 @@ THEN I am prompted to enter the employee’s first name, last name, role, and ma
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
 
-This Application is been deployed on my git hub page, here is a <a href="https://drive.google.com/file/d/1nW6unKi3RwRvM6vaanGTfa5ztUhQxHQ3/view" to a video walkthrough that demonstrates the functionality of my application.
+This Application is been deployed on my git hub page(https://github.com/applespicy/Employee-tracker), here is a <a href="https://drive.google.com/file/d/1i1NHbxjTxussPpMpQ6pqnWet-uRpz0B2/view" to a video walkthrough that demonstrates the functionality of my application.
