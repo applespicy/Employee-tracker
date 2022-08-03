@@ -130,7 +130,7 @@ function viewByRole() {
                 type: "list",
                 choices: function () {
                     let choiceArr = [];
-                    for (i = 0; i < res.lenght; i++) {
+                    for (i = 0; i < res.length; i++) {
                         choiceArr.push(res[i].title);
                     }
                     return choiceArr;
@@ -138,10 +138,10 @@ function viewByRole() {
                 message: "select role"
             }
         ]).then(function () {
-            console.log(answer.choice);
-            db.query("select * from role", [answer.choice], function (err, res) {
+            // console.log(answer.choice);
+            db.query("SELECT * FROM role", [answer.choice], function (err, answer) {
                 if (err) throw err;
-                console.table(res);
+                console.table(answer);
                 start();
             })
         });
@@ -164,7 +164,7 @@ function add() {
             case " role":
                 addRole();
                 break;
-            case "Employee":
+            case "employee":
                 addEmployee();
                 break
             default:
@@ -294,7 +294,7 @@ function addRole() {
     }
 }
 
-function updateEmployees() {
+function updateEmployee() {
     db.query("select * from employee", function (err, res) {
         if (err) throw err;
         inquirer.prompt([
@@ -319,7 +319,7 @@ function updateEmployees() {
                     type: "list",
                     choices: function () {
                         var choiceArr = [];
-                        for (i = 0; i < res.lenght; i++) {
+                        for (i = 0; i < res.lenghth; i++) {
                             choiceArr.push(res[i].role.id)
                         }
                         return choiceArr;
